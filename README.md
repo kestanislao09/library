@@ -5,6 +5,7 @@ This will be an exercise in creating, storing, and outputting objects into a scr
 
 ## Things That Need Doing
  - ~~Write up the book factory function~~ done 3/3/22
+ - ~~Loop to display books as cards~~ done 3/4/22
  - Figure out the logic for using the form to add new books
  - Make sure the read toggle and delete button works.
  - Style things up
