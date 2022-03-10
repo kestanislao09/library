@@ -9,6 +9,59 @@
     <title>Book Collection</title>
 </head>
 <body>
+    <div class="header">A library of sorts</div>
     <div class="container"></div>
+    <button class="add-btn">+</button>
+
+    <div class="modal">
+        <form action="">
+            <label for="title">Title</label>
+            <input id="title" type="text">
+
+            <div class="form-cont">
+                <label for="author">Author</label>
+                <input id="author" type="text">
+                
+                <label for="pages">No. of Pages</label>
+                <input id="pages" type="number">
+            </div>
+
+            <div class="checkboxes">
+                <div>
+                    <label for="read">Book has been read:</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+        
+                <div>
+                    <label for="nsfw">NSFW</label>
+                    <input type="checkbox" id="nsfw" name="nsfw">
+                </div>
+            </div>
+    
+            <fieldset>
+                <legend>What type of literature is this?</legend>
+                <div class="radio-buttons">
+                    <div>
+                        <input type="radio" id="book" name="type" value="book" checked>
+                        <label for="book">Book</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="manga" name="type" value="manga">
+                        <label for="manga">Manga</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="webtoon" name="type" value="webtoon">
+                        <label for="webtoon">Webtoon</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-buttons">
+                <button type="reset" class="submit-btn">Add Book</button>
+                <button type="reset" class="close-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

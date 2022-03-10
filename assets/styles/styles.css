@@ -1,0 +1,152 @@
+body {
+    background-color: #1e293b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1e293b99;
+    overflow: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20% auto;
+    padding: 16px;
+    background-color: #4b5563;
+    border: 3px solid #6b7280;
+    border-radius: 8px;
+    width: 65%;
+}
+
+#author {
+    margin-right: 24px;
+}
+
+#pages {
+    width: 3rem;
+}
+
+.checkboxes {
+    display: flex;
+    gap: 16px;
+}
+
+
+.radio-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.form-buttons > button {
+    width: 5rem;
+    margin: 0;
+}
+
+.header {
+    color: #d1d5db;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.container {
+    border: 1px solid #4b5563;
+    height: 100vh;
+    width: 80vw;
+}
+
+.book-card {
+    height: 64px;
+    margin: 16px;
+    display: grid;
+    gap: 8px;
+    grid-template: 1.5fr 1fr / 75% 2.5fr 1fr 1fr;
+    grid-template-areas: 'card-header badges readBtn del'
+                         'card-desc badges readBtn del';
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #d1d5db;
+    grid-area: card-header;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #6b7280;
+    grid-area: card-desc;
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+    grid-area: badges;
+}
+
+button {
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.read-btn {
+    font-weight: bold;
+    grid-area: readBtn;
+}
+
+.delete-btn {
+    grid-area: del;
+}
+
+.badge {
+    height: 1.5rem;
+    width: 100%;
+    border: 1px solid black;
+    font-size: .9rem;
+    color: white;
+    text-align: center;
+}
+
+.blue {
+    background-color: #0e7490
+}
+
+.orange {
+    background-color: #c2410c;
+}
+
+.pink {
+    background-color: #be185d;
+}
+
+.green {
+    background-color: #047857;
+}
